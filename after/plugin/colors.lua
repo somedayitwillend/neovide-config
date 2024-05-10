@@ -2,11 +2,16 @@ function ColorMyPencils(color)
 	color = color or "catppuccin-mocha"
 	vim.cmd.colorscheme(color)
 
-	vim.api.nvim_set_hl(0, "Normal", { bg = "none"})
-	vim.api.nvim_set_hl(0, "NormaliFloat", { bg = "none"})
+	-- vim.api.nvim_set_hl(0, "Normal", { bg = "none"})
+	-- vim.api.nvim_set_hl(0, "NormaliFloat", { bg = "none"})
 	vim.api.nvim_set_hl(0, "Visual", { bg = "#ff00ff", fg = '#f0f6fc'})
-	vim.api.nvim_set_hl(0, "LineNr", { fg = '#f5b0b6'})
+	-- vim.api.nvim_set_hl(0, "LineNr", { fg = '#f5b0b6'})
+	vim.api.nvim_set_hl(0, "LineNr", { fg = '#e3dac9'})
+  vim.o.guifont = "JetBrainsMono Nerd Font:h10"
 
+  vim.g.neovide_transparency = 0.6
+  vim.g.transparency = 0.6
+  vim.g.neovide_background_color = ("#0f1117" .. string.format("%x", math.floor(((255 * vim.g.transparency) or 0.6 ))))
 end
 
 vim.opt.termguicolors = true

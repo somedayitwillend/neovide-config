@@ -14,3 +14,6 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.g.mapleader = " "
+
+-- vim.opt.guicursor = "i-ci-ve-n:ver25"
+-- vim.opt.guicursor = "i-ci-ve:beam"

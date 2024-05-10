@@ -17,7 +17,7 @@ end)
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {'tsserver', 'rust_analyzer', 'intelephense', 'pyright', 'html', 'cssmodules_ls', 'bashls', 'jsonls', 'marksman', 'hydra_lsp', 'ansiblels'},
+  ensure_installed = {'tsserver', 'rust_analyzer', 'intelephense', 'pyright', 'html', 'cssmodules_ls', 'bashls', 'jsonls', 'marksman', 'ansiblels'},
   handlers = {
     lsp_zero.default_setup,
     lua_ls = function()
@@ -28,6 +28,7 @@ require('mason-lspconfig').setup({
 })
 
 local cmp = require('cmp')
+local cmp_select = {behavior = cmp.SelectBehavior.Select}
 
 cmp.setup({
   sources = {
@@ -37,8 +38,9 @@ cmp.setup({
   },
   mapping = cmp.mapping.preset.insert({
     --['<C-y>'] = cmp.mapping.confirm({ select = true }),
-    ['<return>'] = cmp.mapping.confirm({ select = true }),
     --['<C-Space>'] = cmp.mapping.complete(),
+    ['<return>'] = cmp.mapping.confirm({ select = true }),
+    ['<tab>'] = cmp.mapping.select_next_item(cmp_select),
   }),
 })
 

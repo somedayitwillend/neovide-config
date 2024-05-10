@@ -7,6 +7,12 @@ return require('packer').startup(function(use)
     'nvim-telescope/telescope.nvim', tag = '0.1.6',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional
+    },
+  }
 
   use { "catppuccin/nvim", as = "catppuccin" }
   use { 'brenoprata10/nvim-highlight-colors' }
@@ -27,6 +33,9 @@ return require('packer').startup(function(use)
       require("scrollbar.handlers.gitsigns").setup()
     end
   }
+  use { 'vidocqh/auto-indent.nvim' }
+  use { 'karb94/neoscroll.nvim' }
+
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('nvim-treesitter/playground')
 
