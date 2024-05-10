@@ -7,22 +7,25 @@
 For the time being this repo is private because it contains sensitive code.
 
 ## Important cp
-```
-export XDG_CONFIG_HOME=~/.config/
-export XDG_CONFIG=~/.config/
-```
-
+Install Neovim & Neovide.
 ```
 sudo pacman -S neovim
 sudo pacman -S neovide
 ```
 
+Set environment variables for config location.
+```
+export XDG_CONFIG_HOME=~/.config/
+export XDG_CONFIG=~/.config/
+```
+
+Install packer plugin manager.
 ```
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
 
-> Put this in .zshrc
+> Put this in .zshrc if you will
 ```
 alias vim='neovide'
 
