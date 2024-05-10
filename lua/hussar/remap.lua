@@ -11,6 +11,7 @@ vim.keymap.set("v", "<C-Up>", ":m '<-2<CR>gv=gv")
 vim.keymap.set("v", "<C-Down>", ":m '>+1<CR>gv=gv")
 
 vim.keymap.set("n", "<C-S-k>", "dd")
+vim.keymap.set("i", "<C-S-k>", "<Esc>dd")
 
 vim.keymap.set("n", "<C-S-Down>", "Vyp")
 vim.keymap.set("n", "<C-S-Up>", "VyP")

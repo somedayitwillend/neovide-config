@@ -1,15 +1,31 @@
 ![Header](./img/hussar-header-image.png)
 # Neovim to LSP
 
-> :warning: If you read this keep in mind that this config is tailored for my needs with plugins and shortcuts. Also I use `Neovide` not Neovim for the animated cursor so Neovim is broken with this config.
+> [!WARNING]
+> If you read this keep in mind that this config is tailored for my needs with plugins and shortcuts. Also I use `Neovide` not Neovim for the animated cursor so Neovim is broken with this config.
 
 For the time being this repo is private because it contains sensitive code.
 
 ## Important cp
+```
+export XDG_CONFIG_HOME=~/.config/
+export XDG_CONFIG=~/.config/
+```
+
+```
+sudo pacman -S neovim
+sudo pacman -S neovide
+```
 
 ```
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
+
+> Put this in .zshrc
+```
+alias vim='neovide'
+
 ```
 
 ## Showcase
