@@ -38,7 +38,7 @@ vim.keymap.set('i', '<C-S-v>', '<C-R>+') -- Paste insert mode
 vim.keymap.set("i", "<C-c>", "<Esc>")
 
 vim.keymap.set("n", "<F3>", "<C-w><C-v>")
-vim.keymap.set("n", "<F4>", "<C-w><C-v>")
+vim.keymap.set("n", "<F4>", "<C-w><C-s>")
 vim.keymap.set("n", "<C-Right>", "<C-w><Right>")
 vim.keymap.set("n", "<C-Left>", "<C-w><Left>")
 
