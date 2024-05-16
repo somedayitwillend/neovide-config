@@ -13,8 +13,12 @@ require'barbar'.setup {
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
-map('n', '<A-Left>', '<Cmd>BufferMovePrevious<CR>', opts)
-map('n', '<A-Right>', '<Cmd>BufferMoveNext<CR>', opts)
+-- Move to previous/next
+map('n', '<A-Left>', '<Cmd>BufferPrevious<CR>', opts)
+map('n', '<A-Right>', '<Cmd>BufferNext<CR>', opts)
+-- Re-order to previous/next
+map('n', '<A-S-Left>', '<Cmd>BufferMovePrevious<CR>', opts)
+map('n', '<A-S-Right>', '<Cmd>BufferMoveNext<CR>', opts)
 -- Goto buffer in position...
 map('n', '<A-1>', '<Cmd>BufferGoto 1<CR>', opts)
 map('n', '<A-2>', '<Cmd>BufferGoto 2<CR>', opts)
