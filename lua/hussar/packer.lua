@@ -14,9 +14,16 @@ return require('packer').startup(function(use)
 	use {
 		'nvim-tree/nvim-tree.lua',
 		requires = {
-			'nvim-tree/nvim-web-devicons', -- optional
+			'nvim-tree/nvim-web-devicons',
 		},
 	}
+
+	-- Tabs
+	use { 'romgrk/barbar.nvim' }
+
+	use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+			require("toggleterm").setup()
+	end}
 
 	-- Theme ( mocha ) 
 	use { "catppuccin/nvim", as = "catppuccin" }
