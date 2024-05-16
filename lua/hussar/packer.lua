@@ -34,6 +34,9 @@ return require('packer').startup(function(use)
 	-- Status line
 	use ("nvim-lualine/lualine.nvim")
 
+	-- Bracket pair colorization
+	use { 'fedepujol/bracketpair.nvim' }
+
 	-- Scroll bar
 	use("petertriho/nvim-scrollbar")
 	-- Search and Git options for the scrollbar

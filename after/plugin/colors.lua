@@ -1,5 +1,5 @@
 function ColorMyPencils(color)
-	color = color or "catppuccin-mocha"
+	color = color or "catppuccin-frappe"
 	vim.cmd.colorscheme(color)
 
 	-- vim.api.nvim_set_hl(0, "Normal", { bg = "none"})
@@ -14,7 +14,7 @@ function ColorMyPencils(color)
 
 	vim.g.neovide_transparency = 0.6
 	vim.g.transparency = 0.6
-	vim.g.neovide_background_color = ("#0f1117" .. string.format("%x", math.floor(((255 * vim.g.transparency) or 0.6 ))))
+	vim.g.neovide_background_color = ("#ffffff" .. string.format("%x", math.floor(((255 * vim.g.transparency) or 0.6 ))))
 end
 
 vim.opt.termguicolors = true
