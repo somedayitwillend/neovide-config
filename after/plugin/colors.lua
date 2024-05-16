@@ -37,8 +37,8 @@ require("nvim-highlight-colors").setup {
 require("catppuccin").setup {
 	custom_highlights = function(colors)
 		return {
-			Comment = { fg = colors.flamingo },
-			TabLineSel = { bg = colors.pink },
+			Comment = { fg = colors.red },
+			TabLineSel = { bg = colors.black },
 			CmpBorder = { fg = colors.surface2 },
 			Pmenu = { bg = colors.black },
 		}
