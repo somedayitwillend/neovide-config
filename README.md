@@ -32,7 +32,7 @@ alias vim='neovide'
 ```
 
 ## Showcase
-### `Nvim-tree` with split screen coding capabilities
+### `Nvim-tree` + `Barbar tabs` and split screen coding capabilities
 Toggle the file tree with a shortcut, navigate your directory and start coding, If you want to look up something or write code in multiple files there is a shortcut for splitting the screen horizontally/vertically.
 
 <img src="./img/nvim-tree.png">
