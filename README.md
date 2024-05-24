@@ -27,7 +27,6 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 > Put this in .zshrc if you will
 ```
 alias vim='neovide'
-
 ```
 
 ## Showcase
