@@ -9,8 +9,7 @@ For the time being this repo is private because it contains sensitive code.
 ## Important cp
 Install Neovim & Neovide.
 ```
-sudo pacman -S neovim
-sudo pacman -S neovide
+sudo pacman -S neovim neovide
 ```
 
 Set environment variables for config location.
