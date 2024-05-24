@@ -57,6 +57,11 @@ Install your favorite LSP servers for your languages and enjoy the code autocomp
 
 <img src="./img/zero-lsp.png">
 
+### `Toggle term`
+Toggle the terminal window with a shortcut whenever you are in need of a terminal instead of opening an entirely new terminal taking up space on your screen just to close it afterwards.
+
+<img src="./img/toggleTerm.png">
+
 ## Other Resources
 
 - [Dockerplates](https://github.com/somedayitwillend/prod-dockerplates) - Docker-compose templates for your homelab.
