@@ -1,5 +1,7 @@
 vim.g.mapleader = " "
 
+vim.keymap.set("n", "<leader>r", vim.cmd.CccPick)
+
 -- vim.keymap.set("n", "<C-x>", vim.cmd.Ex)
 vim.keymap.set("n", "<C-q>", vim.cmd.q)
 vim.keymap.set("n", "<C-s>", vim.cmd.w)
