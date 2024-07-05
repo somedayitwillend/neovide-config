@@ -12,6 +12,14 @@ Install Neovim & Neovide.
 sudo pacman -S neovim neovide
 ```
 
+Clone repo and copy dotfiles to ~/.config/neovide
+```
+git clone https://github.com/somedayitwillend/neovide-config.git
+cd neovide-config
+mkdir -p ~/.config/neovide
+cp -r * ~/.config/neovide
+```
+
 Set environment variables for config location.
 ```
 export XDG_CONFIG_HOME=~/.config/
