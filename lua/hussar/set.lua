@@ -19,5 +19,7 @@ vim.g.mapleader = " "
 vim.opt.listchars= { tab = '→ ',trail = '°', space = '•',eol = '↵' }
 vim.opt.list = true
 
+vim.opt.cursorline = true
+
 -- vim.opt.guicursor = "i-ci-ve-n:ver25"
 -- vim.opt.guicursor = "i-ci-ve:beam"

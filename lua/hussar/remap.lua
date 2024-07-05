@@ -40,6 +40,9 @@ vim.keymap.set('v', '<C-S-v>', '"+P')    -- Paste visual mode
 vim.keymap.set('c', '<C-S-v>', '<C-R>+') -- Paste command mode
 vim.keymap.set('i', '<C-S-v>', '<C-R>+') -- Paste insert mode
 
+vim.keymap.set('n', '<leader>n', vim.diagnostic.goto_next)
+vim.keymap.set('n', '<leader>m', vim.diagnostic.goto_prev)
+
 vim.keymap.set("i", "<C-c>", "<Esc>")
 
 vim.keymap.set("n", "<F3>", "<C-w><C-v>")

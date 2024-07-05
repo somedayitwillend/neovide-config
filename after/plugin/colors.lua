@@ -10,12 +10,15 @@ function ColorMyPencils(color)
 	vim.api.nvim_set_hl(0, 'NonText', { fg = '#888888' })
 	vim.api.nvim_set_hl(0, 'SpecialKey', { fg = '#e3dac9' })
 	vim.api.nvim_set_hl(0, 'Whitespace', { fg = '#aaaaaa' })
+	vim.api.nvim_set_hl(0, "CursorLine", { bg = "#607691" })
+	vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#db88ce" })
 	vim.o.guifont = "JetBrainsMono Nerd Font:h10"
 
 	vim.g.neovide_transparency = 0.6
 	vim.g.transparency = 0.6
 	vim.g.neovide_background_color = ("#ffffff" .. string.format("%x", math.floor(((255 * vim.g.transparency) or 0.6 ))))
 end
+
 
 vim.opt.termguicolors = true
 

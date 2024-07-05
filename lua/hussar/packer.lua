@@ -35,7 +35,7 @@ return require('packer').startup(function(use)
 	use ("nvim-lualine/lualine.nvim")
 
 	-- Bracket pair colorization
-	use { 'fedepujol/bracketpair.nvim' }
+	-- use { 'fedepujol/bracketpair.nvim' }
 
 	-- Scroll bar
 	use("petertriho/nvim-scrollbar")

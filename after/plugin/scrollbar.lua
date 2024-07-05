@@ -5,75 +5,75 @@ require("scrollbar").setup({
 	folds = 1000, -- handle folds, set to number to disable folds if no. of lines in buffer exceeds this
 	max_lines = false, -- disables if no. of lines in buffer exceeds this
 	hide_if_all_visible = false, -- Hides everything if all lines are visible
-	throttle_ms = 100,
+	throttle_ms = 10,
 	handle = {
 		text = " ",
-		blend = 30, -- Integer between 0 and 100. 0 for fully opaque and 100 to full transparent. Defaults to 30.
-		color = nil,
+		blend = 0, -- Integer between 0 and 100. 0 for fully opaque and 100 to full transparent. Defaults to 30.
+		color = '#666666',
 		color_nr = nil, -- cterm
 		highlight = "CursorColumn",
 		hide_if_all_visible = false, -- Hides handle if all lines are visible
 	},
 	marks = {
 		Cursor = {
-			text = "•",
+			text = ">",
 			priority = 0,
 			gui = nil,
-			color = nil,
+			color = '#ffffff',
 			cterm = nil,
 			color_nr = nil, -- cterm
 			highlight = "Normal",
 		},
 		Search = {
-			text = { "-", "=" },
+			text = { "<" },
 			priority = 1,
 			gui = nil,
-			color = nil,
+			color = '#ffff00',
 			cterm = nil,
 			color_nr = nil, -- cterm
 			highlight = "Search",
 		},
 		Error = {
-			text = { "-", "=" },
+			text = { "<" },
 			priority = 2,
 			gui = nil,
-			color = nil,
+			color = '#ff9b00',
 			cterm = nil,
 			color_nr = nil, -- cterm
 			highlight = "DiagnosticVirtualTextError",
 		},
 		Warn = {
-			text = { "-", "=" },
+			text = { "<" },
 			priority = 3,
 			gui = nil,
-			color = nil,
+			color = '#ff9b00',
 			cterm = nil,
 			color_nr = nil, -- cterm
 			highlight = "DiagnosticVirtualTextWarn",
 		},
 		Info = {
-			text = { "-", "=" },
+			text = { "!" },
 			priority = 4,
 			gui = nil,
-			color = nil,
+			color = '#00ff00',
 			cterm = nil,
 			color_nr = nil, -- cterm
 			highlight = "DiagnosticVirtualTextInfo",
 		},
 		Hint = {
-			text = { "-", "=" },
+			text = { "!" },
 			priority = 5,
 			gui = nil,
-			color = nil,
+			color = '#00ff00',
 			cterm = nil,
 			color_nr = nil, -- cterm
 			highlight = "DiagnosticVirtualTextHint",
 		},
 		Misc = {
-			text = { "-", "=" },
+			text = { "!" },
 			priority = 6,
 			gui = nil,
-			color = nil,
+			color = '#00ff00',
 			cterm = nil,
 			color_nr = nil, -- cterm
 			highlight = "Normal",
