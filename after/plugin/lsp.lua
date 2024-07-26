@@ -41,6 +41,8 @@ cmp.setup({
 		--['<C-Space>'] = cmp.mapping.complete(),
 		['<return>'] = cmp.mapping.confirm({ select = true }),
 		['<tab>'] = cmp.mapping.select_next_item(cmp_select),
+		-- ['<S-down>'] = cmp.mapping.select_next_item(cmp_select),
+		['<S-tab>'] = cmp.mapping.select_prev_item(cmp_select),
 	}),
 })
 
